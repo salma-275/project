@@ -1,16 +1,16 @@
 body{
-    background-color: #6c757d;
-    margin: 0;
-  font-family: cursive;
-  color: black;  
-  font-size: 15px;
+  background-color: #6c757d;
+  margin: 0;
+font-family: cursive;
+color: black;  
+font-size: 15px;
 }
 
 
 footer{
-  background-color: #e5e5e5;
-  text-align: center; 
-  padding: 15px;
+background-color: #e5e5e5;
+text-align: center; 
+padding: 5px;
 }
 
 .logo{
@@ -49,8 +49,10 @@ li a {
   display: inline-block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 10px;
   text-decoration: none;
+  font-size: 12px;
+  font-family: cursive;
 }
 /* 
 li a:hover, .dropdown:hover .dropbtn {
@@ -66,19 +68,18 @@ li {
 } */
 
 div.polaroid {
- width: 16%;
- background-color: white;
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- margin-bottom: 25px;
- display: inline-block;
-}
-          /*  */
-div.container {
- text-align: center;
- padding: 10px 20px;
- display: inline-block;
-}
-
+  width: 16%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  display: inline-block;
+ }
+           
+ div.container {
+  text-align: center;
+  padding: 7px 16px;
+  display: inline-block;
+ }
 h2{
     /* background-color: #e5e5e5 ; */
     text-align: center;
@@ -101,7 +102,7 @@ a{
 }
 
 .imm{
-     height: 320px;
+  height: 290px;
 }
 
 .btn {
