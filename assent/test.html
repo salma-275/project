@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #bfc0c0;
+  font-family: cursive;
+}
+
+li, .as, button{
+   font-family: cursive;
+   font-weight: 500;
+   font-size: 22px;
+   color: white;
+   text-decoration: none;
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo{
+  cursor: pointer;
+  order: 3;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+nav{
+  order: 1;
+}
+
+.nav-link{
+  list-style: none;
+}
+
+.nav-link li{
+display: inline-block;
+padding: 0px 20px ;
+}
+
+.nav-link li:nth-child(1){
+  padding: 0px 20px 0 0 ;
+}
+
+.nav-link li .as {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-link li .as:hover{
+  color: blue;
+}
+
+.cta {
+  order: 2;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+button{
+  margin-left: 20px;
+  padding: 9px 25px;
+  margin-right: 20px;
+  background-color: rgba(0, 139, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+  background-color: rgba(0, 139, 169, 0.8);
+}
+
+
+
+
+ .icn{
+  background-color: #e2e2df;
+  width: 230px;
+  height: 280PX;
+  border-radius: 10px;
+  text-align: center; 
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
+div.icn{
+  display:inline-block; 
+}
+
+div.icn:hover{
+    animation: inset 2.5s both;
+    background-color:#ced4da;
+  
+}
+
+
+footer{
+  background-color: #68686b;
+  text-align: center; 
+  padding: 8px;
+  margin-top: 170px;
+}
+
+.imgf{
+   padding-left: 30px;
+   padding-right: 30px;
+}
+a{
+  text-decoration: none ;
+ color:black;
+ transition: all 0.5s ease-in-out;
+}
+
+
+@keyframes inset{
+   0% {
+       box-shadow: inset 0 0 0 0 darkgray;
+   }
+   50%{
+       box-shadow: inset 0 0 12px 0 darkgray;
+   }
+   100%{
+       box-shadow: inset 0 0 12px 0 darkgrey;
+   }
+ }
+
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+ .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+} 
+
+/* Change styles for span and cancel button on extra small screens */
+ @media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+/* .slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          margin: 0;
+          padding: 0;
+}
+
+ @-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}   */
+</style>
+</head>
+<body>
+  <header>
+      <img class="logo" src="./img/logo.PNG" width="100px">
+      <nav>
+        <ul class="nav-link">
+          <li><a class="as" href="./HomePage.html">Home</a></li>
+          <li><a class="as" href=".//manPage.html">man</a></li>
+          <li><a class="as" href="./womenPage.html">women</a></li>
+          <li><a class="as" href="./othrePage.html">others</a></li>
+        </ul>
+      </nav>
+      <button class="cte" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >login</button>
+  </header>
+
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>             
+  <br>
+  <center>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+   <a href="./womenPage.html"  >
+   <div class="icn" >
+      <br>
+      <br>
+      <br>
+       <img src="./img/woman.png"  > 
+       <h2>Women</h2>
+    </div></a>
+  
+    <a href="./manPage.html" >
+    <div class="icn">
+      <br>
+      <br>
+      <br>
+       <img src="./img/child.png" width="64px" height="64px" >
+       <h2>Men</h2>
+   </div></a>
+  
+   <a href="./othrePage.html" >
+   <div class="icn">
+      <br>
+      <br>
+      <br>
+       <img src="./img/Artboard – 1.png">
+       <h2>Others</h2>
+   </div></a> 
+  </center>
+   <footer>
+       <center>
+              <a href="https://twitter.com/X76Sa"> <img src="./img/twitter.png" height="32px" width="32px" class="imgf"> </a>
+              <a href="https://www.instagram.com/salshmarii/"> <img src="./img/instagram-sketched.png"height="32px" width="32px" class="imgf" > </a>
+              <a href="https://github.com/salma-275"> <img src="./img/github-image.png" height="32px" width="32px" class="imgf"> </a>
+       </center>
+   </footer>
+   <script src="./js/scrapt.js"></script>
+
+</body>
+</html>
+        
+
