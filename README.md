@@ -1,2 +1,2 @@
-# fainl-projkt
+# fainl-project
  
